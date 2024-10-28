@@ -4,3 +4,8 @@ const product = {
   brand: "Awesome Tees",
   price: 19.99,
 };
+
+const key = "color";
+console.log(product[key]);
+const nonExistentKey = "size";
+console.log(product[nonExistentKey]);

@@ -7,3 +7,12 @@ const product = {
 
 const newKey = "material";
 const newValue = "wool";
+
+product[newKey] = newValue;
+
+const keys = Object.keys(product);
+
+for (let i = 0; i < keys.length; i++) {
+  const key = keys[i];
+  console.log(`${key}: ${product[key]}`);
+}

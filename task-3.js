@@ -6,3 +6,11 @@ const product = {
   sizes: ["S", "M", "L"],
   material: "organic cotton",
 };
+
+const keys = Object.keys(product);
+
+for (let i = 0; i < keys.length; i++) {
+  const key = keys[i];
+  const value = Array.isArray(product[key]) ? product[key].join(",") : product[key];
+  console.log(`${key}: ${value}`);
+}
